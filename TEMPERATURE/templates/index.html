@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Temperature Converter</title>
+</head>
+<body>
+    <h1>Temperature Converter</h1>
+    <form method="post" action="/convert">
+        <label for="celsius">Celsius:</label>
+        <input type="text" id="celsius" name="celsius" required><br><br>
+        
+        <label for="fahrenheit">Fahrenheit:</label>
+        <input type="text" id="fahrenheit" name="fahrenheit" required><br><br>
+        
+        <input type="submit" value="Convert">
+    </form>
+    <p>Result: {{ result }}</p>
+</body>
+</html>
